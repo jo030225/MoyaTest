@@ -31,16 +31,12 @@ class TestViewController: UIViewController {
     private func bindViewModel() {
         viewModel.getUserList()
         
-        viewModel.$userList
-            .delay(for: 1, scheduler: DispatchQueue.main)
-            .sink { [weak self] model in
-            print("ReloadData", model)
-            self?.tableView.reloadData()
-            
+        viewModel.$userList.sink { _ in
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
+            }
         }
         .store(in: &cancellables)
-        
-        
     }
 }
 
@@ -56,6 +52,4 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
         cell.bodyLabel.text = viewModel.userList[indexPath.row].body
         return cell
     }
-    
-    
 }
