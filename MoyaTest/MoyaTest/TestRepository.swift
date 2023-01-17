@@ -9,7 +9,7 @@ import Foundation
 import Moya
 
 class TestRepository: Networkable {
-    typealias Target = TestAPI
+    typealias Target = TestTarget
     
     func getUserList(completion: @escaping (Result<[TestEntity], MoyaError>) -> Void) {
         makeProvider().requestResult(target: .getUserList, model: [TestEntity].self) { result in

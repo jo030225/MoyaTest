@@ -23,7 +23,7 @@
 		BD38E66B29771A0800E0B92F /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E66A29771A0800E0B92F /* TestViewModel.swift */; };
 		BD38E66D29771A4700E0B92F /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E66C29771A4700E0B92F /* Networkable.swift */; };
 		BD38E66F29771A8100E0B92F /* TestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E66E29771A8100E0B92F /* TestEntity.swift */; };
-		BD38E67129771AE500E0B92F /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E67029771AE500E0B92F /* TestAPI.swift */; };
+		BD38E67129771AE500E0B92F /* TestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E67029771AE500E0B92F /* TestTarget.swift */; };
 		BD38E67329771D5F00E0B92F /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E67229771D5F00E0B92F /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		BD38E66A29771A0800E0B92F /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 		BD38E66C29771A4700E0B92F /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
 		BD38E66E29771A8100E0B92F /* TestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEntity.swift; sourceTree = "<group>"; };
-		BD38E67029771AE500E0B92F /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
+		BD38E67029771AE500E0B92F /* TestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTarget.swift; sourceTree = "<group>"; };
 		BD38E67229771D5F00E0B92F /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +90,7 @@
 				BD38E654297717DB00E0B92F /* Info.plist */,
 				BD38E66E29771A8100E0B92F /* TestEntity.swift */,
 				BD38E67229771D5F00E0B92F /* TestModel.swift */,
-				BD38E67029771AE500E0B92F /* TestAPI.swift */,
+				BD38E67029771AE500E0B92F /* TestTarget.swift */,
 				BD38E666297719FA00E0B92F /* TestRepository.swift */,
 				BD38E66829771A0200E0B92F /* TestService.swift */,
 				BD38E66A29771A0800E0B92F /* TestViewModel.swift */,
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD38E67129771AE500E0B92F /* TestAPI.swift in Sources */,
+				BD38E67129771AE500E0B92F /* TestTarget.swift in Sources */,
 				BD38E66B29771A0800E0B92F /* TestViewModel.swift in Sources */,
 				BD38E6622977186100E0B92F /* BaseTargetType.swift in Sources */,
 				BD38E67329771D5F00E0B92F /* TestModel.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  TestAPI.swift
+//  TestTarget.swift
 //  MoyaTest
 //
 //  Created by 조주혁 on 2023/01/18.
@@ -8,11 +8,11 @@
 import Foundation
 import Moya
 
-enum TestAPI {
+enum TestTarget {
     case getUserList
 }
 
-extension TestAPI: BaseTargetType {
+extension TestTarget: BaseTargetType {
     var path: String {
         switch self {
         case .getUserList:
