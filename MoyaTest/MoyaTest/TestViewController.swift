@@ -31,10 +31,10 @@ class TestViewController: UIViewController {
     private func bindViewModel() {
         viewModel.getUserList()
         
-        viewModel.$userList.sink { _ in
-            DispatchQueue.main.async { [weak self] in
-                self?.tableView.reloadData()
-            }
+        viewModel.$userList
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+            self?.tableView.reloadData()
         }
         .store(in: &cancellables)
     }
